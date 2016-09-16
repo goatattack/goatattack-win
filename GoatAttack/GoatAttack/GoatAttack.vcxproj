@@ -55,11 +55,13 @@
     <ClCompile Include="..\..\..\src\shared\src\AudioNull.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\AudioSDL.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Background.cpp" />
+    <ClCompile Include="..\..\..\src\shared\src\Cargo.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Characterset.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Configuration.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\CRC64.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Directory.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Exception.cpp" />
+    <ClCompile Include="..\..\..\src\shared\src\FileReader.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Font.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Globals.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Gui.cpp" />
@@ -96,9 +98,11 @@
     <ClCompile Include="..\..\..\src\shared\src\ZipWriter.cpp" />
     <ClCompile Include="..\..\..\src\shared\zlib\adler32.c" />
     <ClCompile Include="..\..\..\src\shared\zlib\crc32.c" />
+    <ClCompile Include="..\..\..\src\shared\zlib\deflate.c" />
     <ClCompile Include="..\..\..\src\shared\zlib\inffast.c" />
     <ClCompile Include="..\..\..\src\shared\zlib\inflate.c" />
     <ClCompile Include="..\..\..\src\shared\zlib\inftrees.c" />
+    <ClCompile Include="..\..\..\src\shared\zlib\trees.c" />
     <ClCompile Include="..\..\..\src\shared\zlib\zutil.c" />
   </ItemGroup>
   <ItemGroup>
@@ -135,12 +139,15 @@
     <ClInclude Include="..\..\..\src\shared\include\Audio.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\AudioNull.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\AudioSDL.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\AutoPtr.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Background.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\Cargo.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Characterset.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Configuration.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\CRC64.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Directory.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Exception.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\FileReader.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Font.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Globals.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Gui.hpp" />
@@ -179,11 +186,13 @@
     <ClInclude Include="..\..\..\src\shared\include\ZipReader.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\ZipWriter.hpp" />
     <ClInclude Include="..\..\..\src\shared\zlib\crc32.h" />
+    <ClInclude Include="..\..\..\src\shared\zlib\deflate.h" />
     <ClInclude Include="..\..\..\src\shared\zlib\gzguts.h" />
     <ClInclude Include="..\..\..\src\shared\zlib\inffast.h" />
     <ClInclude Include="..\..\..\src\shared\zlib\inffixed.h" />
     <ClInclude Include="..\..\..\src\shared\zlib\inflate.h" />
     <ClInclude Include="..\..\..\src\shared\zlib\inftrees.h" />
+    <ClInclude Include="..\..\..\src\shared\zlib\trees.h" />
     <ClInclude Include="..\..\..\src\shared\zlib\zconf.h" />
     <ClInclude Include="..\..\..\src\shared\zlib\zlib.h" />
     <ClInclude Include="..\..\..\src\shared\zlib\zutil.h" />

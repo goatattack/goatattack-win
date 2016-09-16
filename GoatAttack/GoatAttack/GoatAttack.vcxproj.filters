@@ -288,6 +288,18 @@
     <ClCompile Include="..\..\..\src\shared\src\ZipWriter.cpp">
       <Filter>shared\src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Cargo.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\FileReader.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\zlib\deflate.c">
+      <Filter>shared\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\zlib\trees.c">
+      <Filter>shared\zlib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Win.hpp">
@@ -547,6 +559,21 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\shared\include\ZipWriter.hpp">
       <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\AutoPtr.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Cargo.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\FileReader.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\deflate.h">
+      <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\trees.h">
+      <Filter>shared\zlib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
