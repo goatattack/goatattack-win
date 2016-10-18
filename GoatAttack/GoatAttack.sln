@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoatAttack", "GoatAttack\Go
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MapEditor", "MapEditor\MapEditor.vcxproj", "{2B8DF22A-DCDE-4ADC-9489-C90560EB7320}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cargo", "Cargo\Cargo.vcxproj", "{2F705BCE-ED52-45AB-907C-4604F6F7A20A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug (ded)|Mixed Platforms = Debug (ded)|Mixed Platforms
@@ -56,6 +58,24 @@ Global
 		{2B8DF22A-DCDE-4ADC-9489-C90560EB7320}.Release|Win32.Build.0 = Release|Win32
 		{2B8DF22A-DCDE-4ADC-9489-C90560EB7320}.Release|x86.ActiveCfg = Release|Win32
 		{2B8DF22A-DCDE-4ADC-9489-C90560EB7320}.Release|x86.Build.0 = Release|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Debug (ded)|Mixed Platforms.ActiveCfg = Debug|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Debug (ded)|Mixed Platforms.Build.0 = Debug|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Debug (ded)|Win32.ActiveCfg = Debug|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Debug (ded)|Win32.Build.0 = Debug|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Debug (ded)|x86.ActiveCfg = Debug|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Debug (ded)|x86.Build.0 = Debug|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Debug|Win32.Build.0 = Debug|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Debug|x86.ActiveCfg = Debug|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Debug|x86.Build.0 = Debug|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Release|Win32.ActiveCfg = Release|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Release|Win32.Build.0 = Release|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Release|x86.ActiveCfg = Release|Win32
+		{2F705BCE-ED52-45AB-907C-4604F6F7A20A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

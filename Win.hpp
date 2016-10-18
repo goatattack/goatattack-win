@@ -20,7 +20,7 @@ typedef int socklen_t;
 #define NI_MAXSERV 32
 #define PATH_MAX 4096
 
-#pragma warning( disable : 4290 )
+#pragma warning(disable : 4290)
 #pragma comment(lib, "Ws2_32.lib")
 #pragma comment(lib, "User32.lib")
 #pragma comment(lib, "Shlwapi.lib")
@@ -36,6 +36,7 @@ typedef __int16 int16_t;
 typedef unsigned __int16 uint16_t;
 
 static const char *dir_separator = "\\";
+static const int MaxPathLength = 2048;
 
 /* msvc is really super ugly */
 #undef min

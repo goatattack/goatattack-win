@@ -51,8 +51,8 @@
       </PrecompiledHeader>
       <WarningLevel>Level2</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;NOMINMAX;DATA_DIRECTORY=C:\\prg\\goatattack\\data;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\prg\goatattack\src\MapEditor\include;C:\prg\goatattack\src\shared\include;C:\prg\goatattack\src\shared\zlib;C:\prg\goatattack\windows;C:\prg\goatattack\windows\Libraries\libpng\include;C:\prg\goatattack\windows\Libraries\SDL2\include;C:\prg\goatattack\windows\Libraries\SDL2_mixer\include;C:\prg\goatattack\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;NOMINMAX;DATA_DIRECTORY=data;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\src\MapEditor\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
       <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
@@ -61,7 +61,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>libpng16.lib;zlib.lib;SDL2.lib;SDL2main.lib;SDL2_mixer.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\prg\goatattack\windows\Libraries\libpng\lib\Debug;C:\prg\goatattack\windows\Libraries\SDL2\lib\x86;C:\prg\goatattack\windows\Libraries\SDL2_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Debug;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <UACExecutionLevel>AsInvoker</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
@@ -85,7 +85,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>libpng16.lib;zlib.lib;SDL2.lib;SDL2main.lib;SDL2_mixer.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\prg\goatattack\windows\Libraries\libpng\lib\Release;C:\prg\goatattack\windows\Libraries\SDL2\lib\x86;C:\prg\goatattack\windows\Libraries\SDL2_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Release;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <UACExecutionLevel>AsInvoker</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
@@ -121,6 +121,7 @@
     <ClCompile Include="..\..\..\src\shared\src\Lightmap.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Map.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Movable.cpp" />
+    <ClCompile Include="..\..\..\src\shared\src\MultiReader.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Music.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Mutex.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\NPC.cpp" />
@@ -128,6 +129,9 @@
     <ClCompile Include="..\..\..\src\shared\src\PNG.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Properties.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Resources.cpp" />
+    <ClCompile Include="..\..\..\src\shared\src\Shader.cpp" />
+    <ClCompile Include="..\..\..\src\shared\src\ShaderGL.cpp" />
+    <ClCompile Include="..\..\..\src\shared\src\ShaderNull.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Sound.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Subsystem.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\SubsystemNull.cpp" />
@@ -185,7 +189,9 @@
     <ClInclude Include="..\..\..\src\shared\include\KeyValue.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Lightmap.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Map.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\Matrix4x4.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Movable.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\MultiReader.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Music.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Mutex.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\NPC.hpp" />
@@ -196,6 +202,9 @@
     <ClInclude Include="..\..\..\src\shared\include\Scope.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\ScopeAllocator.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\ScopeCollector.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\Shader.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\ShaderGL.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\ShaderNull.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Sound.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Subsystem.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\SubsystemNull.hpp" />
