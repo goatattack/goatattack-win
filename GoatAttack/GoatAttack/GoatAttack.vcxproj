@@ -15,6 +15,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ResourceCompile Include="GoatAttack.rc" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="..\..\..\src\Engine\main.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\ButtonNavigator.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\Client.cpp" />
@@ -205,13 +208,10 @@
     <ClInclude Include="..\..\..\src\shared\zlib\zconf.h" />
     <ClInclude Include="..\..\..\src\shared\zlib\zlib.h" />
     <ClInclude Include="..\..\..\src\shared\zlib\zutil.h" />
-    <ClInclude Include="..\..\Win.hpp" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="GoatAttack.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\icon.ico" />
+    <Image Include="icon.ico" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B85F1BF7-7970-4C6D-AFC0-AEBB3475A487}</ProjectGuid>

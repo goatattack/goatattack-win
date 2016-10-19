@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="code">
+      <UniqueIdentifier>{a56477d2-89a1-4bd0-a273-75650b3e3cdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{2fd79673-6df9-4452-a10a-96cb55af9166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\include">
+      <UniqueIdentifier>{7066ead8-824c-4e9c-aa83-71ebc2264907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\src">
+      <UniqueIdentifier>{ca446323-f7ad-4c6f-8e18-3477c7628233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{700036a1-8395-461f-bc6b-b6ccfe53e836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\src">
+      <UniqueIdentifier>{a115c8d0-422e-48c9-b92f-80b74d68a03a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\include">
+      <UniqueIdentifier>{1706f21a-5898-4456-9be3-333d83e8f8dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\zlib">
+      <UniqueIdentifier>{eba40b53-70b0-43a7-8cbd-c5b661850ac2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GoatAttack.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\Engine\main.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\ButtonNavigator.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\Client.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\ClientEvent.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\ClientServer.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\Game.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\GameserverInformation.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\KeyBinding.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\LANBroadcaster.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\MainMenu.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\MapConfiguration.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\MasterQuery.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\MasterQueryClient.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\MessageSequencer.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\OptionsMenu.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\Player.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\Server.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\ServerAdmin.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\ServerLogger.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\Tournament.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentCTC.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentCTF.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentDM.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentDraw.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentFactory.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentGOH.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentNPC.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentPhysics.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentSpectator.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentSR.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentStates.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentTDM.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentTeam.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentWeapons.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\AABB.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Animation.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Audio.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\AudioNull.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\AudioSDL.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Background.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Cargo.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Characterset.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Configuration.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\CRC64.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Directory.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Exception.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\FileReader.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Font.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Globals.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Gui.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\GuiObject.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Icon.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\KeyValue.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Lightmap.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Map.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Movable.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\MultiReader.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Music.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Mutex.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\NPC.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Object.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\PNG.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Properties.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Resources.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Shader.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\ShaderGL.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\ShaderNull.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Sound.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Subsystem.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\SubsystemNull.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\SubsystemSDL.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\TCPSocket.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\TextMessageSystem.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Thread.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Tile.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\TileGraphic.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\TileGraphicGL.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\TileGraphicNull.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Tileset.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Timing.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\UDPSocket.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Utils.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\Zip.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\ZipReader.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\ZipWriter.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\zlib\adler32.c">
+      <Filter>shared\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\zlib\crc32.c">
+      <Filter>shared\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\zlib\deflate.c">
+      <Filter>shared\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\zlib\inffast.c">
+      <Filter>shared\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\zlib\inflate.c">
+      <Filter>shared\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\zlib\inftrees.c">
+      <Filter>shared\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\zlib\trees.c">
+      <Filter>shared\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\zlib\zutil.c">
+      <Filter>shared\zlib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\Engine\include\ButtonNavigator.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\Client.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\ClientServer.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\Game.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\GameProtocol.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\GameserverInformation.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\KeyBinding.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\LANBroadcaster.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\MainMenu.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\MapConfiguration.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\MasterQuery.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\MasterQueryClient.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\MessageSequencer.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\OptionsMenu.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\Player.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\Protocol.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\Server.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\ServerAdmin.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\ServerLogger.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\Tournament.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentCTC.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentCTF.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentDM.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentFactory.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentGOH.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentSR.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentTDM.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentTeam.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\AABB.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Animation.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Audio.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\AudioNull.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\AudioSDL.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\AutoPtr.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Background.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Cargo.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Characterset.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Configuration.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\CRC64.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Directory.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Exception.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\FileReader.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Font.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Globals.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Gui.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\GuiObject.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Icon.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\KeyValue.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Lightmap.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Map.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Matrix4x4.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Movable.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\MultiReader.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Music.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Mutex.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\NPC.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Object.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\PNG.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Properties.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Resources.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Scope.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\ScopeAllocator.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\ScopeCollector.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Shader.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\ShaderGL.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\ShaderNull.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Sound.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Subsystem.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\SubsystemNull.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\SubsystemSDL.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\TCPSocket.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\TextMessageSystem.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Thread.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Tile.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\TileGraphic.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\TileGraphicGL.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\TileGraphicNull.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Tileset.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Timing.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\UDPSocket.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Utils.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\Zip.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\ZipReader.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\ZipWriter.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\crc32.h">
+      <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\deflate.h">
+      <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\gzguts.h">
+      <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\inffast.h">
+      <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\inffixed.h">
+      <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\inflate.h">
+      <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\inftrees.h">
+      <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\trees.h">
+      <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\zconf.h">
+      <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\zlib.h">
+      <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\zlib\zutil.h">
+      <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico">
+      <Filter>resources</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -11,7 +11,40 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\Cargo\main.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\main.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\ButtonNavigator.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\Client.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\ClientEvent.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\ClientServer.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\Game.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\GameserverInformation.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\KeyBinding.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\LANBroadcaster.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\MainMenu.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\MapConfiguration.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\MasterQuery.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\MasterQueryClient.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\MessageSequencer.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\OptionsMenu.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\Player.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\Server.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\ServerAdmin.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\ServerLogger.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\Tournament.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentCTC.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentCTF.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentDM.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentDraw.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentFactory.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentGOH.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentNPC.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentPhysics.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentSpectator.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentSR.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentStates.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentTDM.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentTeam.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\TournamentWeapons.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\AABB.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Animation.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Audio.cpp" />
@@ -73,6 +106,34 @@
     <ClCompile Include="..\..\..\src\shared\zlib\zutil.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\src\Engine\include\ButtonNavigator.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\Client.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\ClientServer.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\Game.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\GameProtocol.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\GameserverInformation.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\KeyBinding.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\LANBroadcaster.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\MainMenu.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\MapConfiguration.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\MasterQuery.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\MasterQueryClient.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\MessageSequencer.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\OptionsMenu.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\Player.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\Protocol.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\Server.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\ServerAdmin.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\ServerLogger.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\Tournament.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentCTC.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentCTF.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentDM.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentFactory.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentGOH.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentSR.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentTDM.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\TournamentTeam.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\AABB.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Animation.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Audio.hpp" />
@@ -142,9 +203,9 @@
     <ClInclude Include="..\..\..\src\shared\zlib\zutil.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2F705BCE-ED52-45AB-907C-4604F6F7A20A}</ProjectGuid>
+    <ProjectGuid>{9F158D07-69E9-46A2-82B9-09B76F9F56B1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Cargo</RootNamespace>
+    <RootNamespace>GoatAttackServer</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -178,37 +239,37 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level2</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;DEDICATED_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;DATA_DIRECTORY=data;DEDICATED_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\src\Engine\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Debug;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Debug</AdditionalLibraryDirectories>
       <AdditionalDependencies>libpng16.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level2</WarningLevel>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;DEDICATED_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;DATA_DIRECTORY=data;DEDICATED_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\src\Engine\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Release;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Release</AdditionalLibraryDirectories>
       <AdditionalDependencies>libpng16.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
