@@ -12,6 +12,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\Cargo\main.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NEnglish.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NFrench.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NGerman.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NPortuguese.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\AABB.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Animation.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Audio.cpp" />
@@ -29,6 +33,7 @@
     <ClCompile Include="..\..\..\src\shared\src\Globals.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Gui.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\GuiObject.cpp" />
+    <ClCompile Include="..\..\..\src\shared\src\I18N.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Icon.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\KeyValue.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Lightmap.cpp" />
@@ -88,9 +93,12 @@
     <ClInclude Include="..\..\..\src\shared\include\Exception.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\FileReader.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Font.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\FT.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Globals.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Gui.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\GuiObject.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\I18N.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\I18NTexts.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Icon.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\KeyValue.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Lightmap.hpp" />
@@ -125,6 +133,7 @@
     <ClInclude Include="..\..\..\src\shared\include\Tileset.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Timing.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\UDPSocket.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\UTF8.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Utils.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Zip.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\ZipReader.hpp" />

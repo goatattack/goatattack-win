@@ -25,6 +25,9 @@
     <Filter Include="shared\zlib">
       <UniqueIdentifier>{eba40b53-70b0-43a7-8cbd-c5b661850ac2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="shared\i18n">
+      <UniqueIdentifier>{b91b1a26-cf82-4b6c-81e8-1fd266b8e654}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GoatAttack.rc">
@@ -310,6 +313,21 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\shared\zlib\zutil.c">
       <Filter>shared\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\I18N.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NEnglish.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NFrench.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NGerman.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NPortuguese.cpp">
+      <Filter>shared\i18n</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -600,6 +618,18 @@
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\FT.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\I18N.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\I18NTexts.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\UTF8.hpp">
+      <Filter>shared\include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

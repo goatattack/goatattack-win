@@ -16,6 +16,9 @@
     <Filter Include="shared\zlib">
       <UniqueIdentifier>{f1e9e880-b94b-453e-be2a-71749ab04f1f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="shared\i18n">
+      <UniqueIdentifier>{c1d65d8a-eb58-48be-bf12-44780aa6850e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\Cargo\main.cpp">
@@ -197,6 +200,21 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\shared\zlib\zutil.c">
       <Filter>shared\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\I18N.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NEnglish.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NFrench.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NGerman.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NPortuguese.cpp">
+      <Filter>shared\i18n</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -400,6 +418,18 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\shared\zlib\zutil.h">
       <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\FT.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\I18N.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\I18NTexts.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\UTF8.hpp">
+      <Filter>shared\include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

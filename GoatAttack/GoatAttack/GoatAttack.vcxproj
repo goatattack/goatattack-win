@@ -52,6 +52,10 @@
     <ClCompile Include="..\..\..\src\Engine\src\TournamentTDM.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\TournamentTeam.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\TournamentWeapons.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NEnglish.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NFrench.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NGerman.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NPortuguese.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\AABB.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Animation.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Audio.cpp" />
@@ -69,6 +73,7 @@
     <ClCompile Include="..\..\..\src\shared\src\Globals.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Gui.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\GuiObject.cpp" />
+    <ClCompile Include="..\..\..\src\shared\src\I18N.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Icon.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\KeyValue.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Lightmap.cpp" />
@@ -156,9 +161,12 @@
     <ClInclude Include="..\..\..\src\shared\include\Exception.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\FileReader.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Font.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\FT.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Globals.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Gui.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\GuiObject.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\I18N.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\I18NTexts.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Icon.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\KeyValue.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Lightmap.hpp" />
@@ -193,6 +201,7 @@
     <ClInclude Include="..\..\..\src\shared\include\Tileset.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Timing.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\UDPSocket.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\UTF8.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Utils.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Zip.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\ZipReader.hpp" />
@@ -270,7 +279,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;DATA_DIRECTORY=data;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile />
-      <AdditionalIncludeDirectories>..\..\..\src\Engine\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\src\Engine\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\freetype-2.7\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
@@ -278,8 +287,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Debug;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libpng16.lib;zlib.lib;SDL2.lib;SDL2main.lib;SDL2_mixer.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Debug;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86;..\..\..\windows\Libraries\freetype-2.7\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libpng16.lib;zlib.lib;SDL2.lib;SDL2main.lib;SDL2_mixer.lib;OpenGL32.lib;freetype27d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (ded)|Win32'">
@@ -314,7 +323,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;DATA_DIRECTORY=data;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile />
-      <AdditionalIncludeDirectories>..\..\..\src\Engine\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\src\Engine\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\freetype-2.7\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <EnableParallelCodeGeneration>
       </EnableParallelCodeGeneration>
@@ -325,8 +334,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Release;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libpng16.lib;zlib.lib;SDL2.lib;SDL2main.lib;SDL2_mixer.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Release;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86;..\..\..\windows\Libraries\freetype-2.7\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libpng16.lib;zlib.lib;SDL2.lib;SDL2main.lib;SDL2_mixer.lib;OpenGL32.lib;freetype27.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
