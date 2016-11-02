@@ -19,6 +19,7 @@
     <ClCompile Include="..\..\..\src\Engine\src\Game.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\GameserverInformation.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\KeyBinding.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\Lagometer.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\LANBroadcaster.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\MainMenu.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\MapConfiguration.cpp" />
@@ -45,6 +46,10 @@
     <ClCompile Include="..\..\..\src\Engine\src\TournamentTDM.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\TournamentTeam.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\TournamentWeapons.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NEnglish.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NFrench.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NGerman.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NPortuguese.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\AABB.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Animation.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Audio.cpp" />
@@ -62,6 +67,7 @@
     <ClCompile Include="..\..\..\src\shared\src\Globals.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Gui.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\GuiObject.cpp" />
+    <ClCompile Include="..\..\..\src\shared\src\I18N.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Icon.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\KeyValue.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Lightmap.cpp" />
@@ -113,6 +119,7 @@
     <ClInclude Include="..\..\..\src\Engine\include\GameProtocol.hpp" />
     <ClInclude Include="..\..\..\src\Engine\include\GameserverInformation.hpp" />
     <ClInclude Include="..\..\..\src\Engine\include\KeyBinding.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\Lagometer.hpp" />
     <ClInclude Include="..\..\..\src\Engine\include\LANBroadcaster.hpp" />
     <ClInclude Include="..\..\..\src\Engine\include\MainMenu.hpp" />
     <ClInclude Include="..\..\..\src\Engine\include\MapConfiguration.hpp" />
@@ -149,9 +156,12 @@
     <ClInclude Include="..\..\..\src\shared\include\Exception.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\FileReader.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Font.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\FT.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Globals.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Gui.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\GuiObject.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\I18N.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\I18NTexts.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Icon.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\KeyValue.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Lightmap.hpp" />
@@ -186,6 +196,7 @@
     <ClInclude Include="..\..\..\src\shared\include\Tileset.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Timing.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\UDPSocket.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\UTF8.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Utils.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Zip.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\ZipReader.hpp" />
@@ -244,13 +255,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;DATA_DIRECTORY=data;DEDICATED_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\..\src\Engine\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\src\Engine\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\freetype-2.7\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Debug</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libpng16.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Debug;..\..\..\windows\Libraries\freetype-2.7\lib\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libpng16.lib;freetype27d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -262,15 +273,15 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;DATA_DIRECTORY=data;DEDICATED_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\..\src\Engine\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\src\Engine\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\freetype-2.7\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Release</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libpng16.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Release;..\..\..\windows\Libraries\freetype-2.7\lib\Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libpng16.lib;freetype27.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -226,6 +226,18 @@
     <ClInclude Include="..\..\..\src\shared\zlib\zutil.h">
       <Filter>shared\zlib</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\FT.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\I18N.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\I18NTexts.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\UTF8.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="code">
@@ -251,6 +263,9 @@
     </Filter>
     <Filter Include="shared\zlib">
       <UniqueIdentifier>{7f63d393-7955-4c87-8f62-00c2ee8827e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\i18n">
+      <UniqueIdentifier>{0c26b073-0aaf-4f88-a9ca-2293045d4a00}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -462,6 +477,21 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\shared\zlib\zutil.c">
       <Filter>shared\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NEnglish.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NFrench.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NGerman.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NPortuguese.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\I18N.cpp">
+      <Filter>shared\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -26,6 +26,7 @@
     <ClCompile Include="..\..\..\src\Engine\src\Game.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\GameserverInformation.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\KeyBinding.cpp" />
+    <ClCompile Include="..\..\..\src\Engine\src\Lagometer.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\LANBroadcaster.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\MainMenu.cpp" />
     <ClCompile Include="..\..\..\src\Engine\src\MapConfiguration.cpp" />
@@ -125,6 +126,7 @@
     <ClInclude Include="..\..\..\src\Engine\include\GameProtocol.hpp" />
     <ClInclude Include="..\..\..\src\Engine\include\GameserverInformation.hpp" />
     <ClInclude Include="..\..\..\src\Engine\include\KeyBinding.hpp" />
+    <ClInclude Include="..\..\..\src\Engine\include\Lagometer.hpp" />
     <ClInclude Include="..\..\..\src\Engine\include\LANBroadcaster.hpp" />
     <ClInclude Include="..\..\..\src\Engine\include\MainMenu.hpp" />
     <ClInclude Include="..\..\..\src\Engine\include\MapConfiguration.hpp" />

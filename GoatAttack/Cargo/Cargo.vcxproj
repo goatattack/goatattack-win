@@ -192,13 +192,13 @@
       <WarningLevel>Level2</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;DEDICATED_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\freetype-2.7\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Debug;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libpng16.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Debug;..\..\..\windows\Libraries\freetype-2.7\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libpng16.lib;freetype27d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -210,15 +210,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;DEDICATED_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\freetype-2.7\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Release;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libpng16.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Release;..\..\..\windows\Libraries\freetype-2.7\lib\Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libpng16.lib;freetype27.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

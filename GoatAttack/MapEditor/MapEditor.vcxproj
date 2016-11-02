@@ -52,7 +52,7 @@
       <WarningLevel>Level2</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;NOMINMAX;DATA_DIRECTORY=data;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\src\MapEditor\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\src\MapEditor\include;..\..\..\src\shared\include;..\..\..\src\shared\zlib;..\..\..\windows;..\..\..\windows\Libraries\libpng\include;..\..\..\windows\Libraries\freetype-2.7\include;..\..\..\windows\Libraries\SDL2\include;..\..\..\windows\Libraries\SDL2_mixer\include;..\..\..\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
       <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
@@ -60,8 +60,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>libpng16.lib;zlib.lib;SDL2.lib;SDL2main.lib;SDL2_mixer.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Debug;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libpng16.lib;zlib.lib;SDL2.lib;SDL2main.lib;SDL2_mixer.lib;OpenGL32.lib;freetype27d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Debug;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86;..\..\..\windows\Libraries\freetype-2.7\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <UACExecutionLevel>AsInvoker</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
@@ -74,7 +74,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;NOMINMAX;DATA_DIRECTORY=data;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\prg\goatattack\src\MapEditor\include;C:\prg\goatattack\src\shared\include;C:\prg\goatattack\src\shared\zlib;C:\prg\goatattack\windows;C:\prg\goatattack\windows\Libraries\libpng\include;C:\prg\goatattack\windows\Libraries\SDL2\include;C:\prg\goatattack\windows\Libraries\SDL2_mixer\include;C:\prg\goatattack\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\prg\goatattack\src\MapEditor\include;C:\prg\goatattack\src\shared\include;C:\prg\goatattack\src\shared\zlib;C:\prg\goatattack\windows;C:\prg\goatattack\windows\Libraries\libpng\include;..\..\..\windows\Libraries\freetype-2.7\include;C:\prg\goatattack\windows\Libraries\SDL2\include;C:\prg\goatattack\windows\Libraries\SDL2_mixer\include;C:\prg\goatattack\windows\Libraries\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -84,8 +84,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>libpng16.lib;zlib.lib;SDL2.lib;SDL2main.lib;SDL2_mixer.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Release;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libpng16.lib;zlib.lib;SDL2.lib;SDL2main.lib;SDL2_mixer.lib;OpenGL32.lib;freetype27.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\windows\Libraries\libpng\lib\Release;..\..\..\windows\Libraries\SDL2\lib\x86;..\..\..\windows\Libraries\SDL2_mixer\lib\x86;..\..\..\windows\Libraries\freetype-2.7\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <UACExecutionLevel>AsInvoker</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
@@ -112,9 +112,12 @@
     <ClInclude Include="..\..\..\src\shared\include\Exception.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\FileReader.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Font.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\FT.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Globals.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Gui.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\GuiObject.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\I18N.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\I18NTexts.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Icon.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\KeyValue.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Lightmap.hpp" />
@@ -149,6 +152,7 @@
     <ClInclude Include="..\..\..\src\shared\include\Tileset.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Timing.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\UDPSocket.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\UTF8.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Utils.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Zip.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\ZipReader.hpp" />
@@ -179,6 +183,10 @@
     <ClCompile Include="..\..\..\src\MapEditor\src\EditableObject.cpp" />
     <ClCompile Include="..\..\..\src\MapEditor\src\MapEditor.cpp" />
     <ClCompile Include="..\..\..\src\MapEditor\src\MapEditorLightmap.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NEnglish.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NFrench.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NGerman.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NPortuguese.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\AABB.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Animation.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Audio.cpp" />
@@ -196,6 +204,7 @@
     <ClCompile Include="..\..\..\src\shared\src\Globals.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Gui.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\GuiObject.cpp" />
+    <ClCompile Include="..\..\..\src\shared\src\I18N.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Icon.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\KeyValue.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Lightmap.cpp" />

@@ -24,6 +24,9 @@
     <Filter Include="shared\zlib">
       <UniqueIdentifier>{f9b4d51a-f76c-4475-aab0-3b5c3086f3a4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="shared\i18n">
+      <UniqueIdentifier>{745593cd-b929-4ca5-bc61-d7468f5fb14c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\Engine\main.cpp">
@@ -304,6 +307,24 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\shared\zlib\zutil.c">
       <Filter>shared\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Engine\src\Lagometer.cpp">
+      <Filter>code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\I18N.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NEnglish.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NFrench.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NGerman.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NPortuguese.cpp">
+      <Filter>shared\i18n</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -591,6 +612,21 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\shared\zlib\zutil.h">
       <Filter>shared\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Engine\include\Lagometer.hpp">
+      <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\FT.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\I18N.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\I18NTexts.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\UTF8.hpp">
+      <Filter>shared\include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
