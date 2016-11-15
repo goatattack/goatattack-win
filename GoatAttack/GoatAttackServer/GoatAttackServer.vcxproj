@@ -50,6 +50,7 @@
     <ClCompile Include="..\..\..\src\shared\i18n\I18NFrench.cpp" />
     <ClCompile Include="..\..\..\src\shared\i18n\I18NGerman.cpp" />
     <ClCompile Include="..\..\..\src\shared\i18n\I18NPortuguese.cpp" />
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NSpanish.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\AABB.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Animation.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Audio.cpp" />

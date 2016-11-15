@@ -216,6 +216,9 @@
     <ClCompile Include="..\..\..\src\shared\i18n\I18NPortuguese.cpp">
       <Filter>shared\i18n</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NSpanish.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\shared\include\AABB.hpp">

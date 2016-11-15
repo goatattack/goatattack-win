@@ -332,6 +332,9 @@
     <ClCompile Include="..\..\..\src\Engine\src\Lagometer.cpp">
       <Filter>code\src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\i18n\I18NSpanish.cpp">
+      <Filter>shared\i18n</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\Engine\include\ButtonNavigator.hpp">
