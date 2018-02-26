@@ -129,6 +129,7 @@
     <ClInclude Include="..\..\..\src\shared\include\Mutex.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\NPC.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Object.hpp" />
+    <ClInclude Include="..\..\..\src\shared\include\PathManager.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\PNG.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Properties.hpp" />
     <ClInclude Include="..\..\..\src\shared\include\Resources.hpp" />
@@ -216,6 +217,7 @@
     <ClCompile Include="..\..\..\src\shared\src\Mutex.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\NPC.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Object.cpp" />
+    <ClCompile Include="..\..\..\src\shared\src\PathManager.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\PNG.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Properties.cpp" />
     <ClCompile Include="..\..\..\src\shared\src\Resources.cpp" />

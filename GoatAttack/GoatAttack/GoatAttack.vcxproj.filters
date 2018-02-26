@@ -335,6 +335,9 @@
     <ClCompile Include="..\..\..\src\shared\i18n\I18NSpanish.cpp">
       <Filter>shared\i18n</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\PathManager.cpp">
+      <Filter>shared\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\Engine\include\ButtonNavigator.hpp">
@@ -639,6 +642,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\Engine\include\Lagometer.hpp">
       <Filter>code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\PathManager.hpp">
+      <Filter>shared\include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

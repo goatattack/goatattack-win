@@ -238,6 +238,9 @@
     <ClInclude Include="..\..\..\src\shared\include\UTF8.hpp">
       <Filter>shared\include</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\shared\include\PathManager.hpp">
+      <Filter>shared\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="code">
@@ -495,6 +498,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\shared\i18n\I18NSpanish.cpp">
       <Filter>shared\i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\shared\src\PathManager.cpp">
+      <Filter>shared\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
